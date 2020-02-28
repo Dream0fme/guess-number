@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_game">
+
+    <TextView
+        android:id="@+id/txtAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space2"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text=""
+        tools:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btnY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/space2"
+        android:onClick="clickYorN"
+        android:text="Да" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/space2"
+        android:onClick="clickYorN"
+        android:text="Нет" />
+
+    <TextView
+        android:id="@+id/cntTry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMyNum"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text=""
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/timeTry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cntTry"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text=""
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnMyNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:onClick="clickYorN"
+        android:text="Угадали!" />
+</RelativeLayout>
